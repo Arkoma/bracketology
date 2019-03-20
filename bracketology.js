@@ -71,7 +71,7 @@ const matchupWinnerIs = (team1, team2) => {
       }
       console.log(team1data.name + ": " + team1dataScore + "\n");
       console.log(team2data.name + ": " + team2dataScore + "\n");
-      if (Math.abs(team1dataScore - team2dataScore) < 3) {
+      if (Math.abs(team1dataScore - team2dataScore) === 2) {
         if (Math.floor(Math.random() * 2) === 0) {
           console.log(team1data.name, " will win");
         } else { console.log(team2data.name, " will win") }
@@ -82,4 +82,4 @@ const matchupWinnerIs = (team1, team2) => {
     .catch(e => console.log(e)); 
 }
 
-matchupWinnerIs(`duke`, 'kansas');
+matchupWinnerIs(`vcu`, 'ucf');
